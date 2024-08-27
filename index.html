@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Laptop Price Predictor</h1>
+        <div class="input-group">
+            <label for="ram">RAM (GB):</label>
+            <select id="ram">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="16">16</option>
+                <option value="32">32</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="ssd">SSD (GB):</label>
+            <select id="ssd">
+                <option value="128">128</option>
+                <option value="256">256</option>
+                <option value="512">512</option>
+                <option value="1024">1024</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="brand">Brand:</label>
+            <select id="brand">
+                <option value="Asus">Asus</option>
+                <option value="Dell">Dell</option>
+                <option value="HP">HP</option>
+                <option value="Lenovo">Lenovo</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="processor">Processor:</label>
+            <select id="processor">
+                <option value="AMD Ryzen 5">AMD Ryzen 5</option>
+                <option value="Intel i3">Intel i3</option>
+                <option value="Intel i5">Intel i5</option>
+                <option value="Intel i7">Intel i7</option>
+            </select>
+        </div>
+        <button onclick="predictPrice()">Predict Price</button>
+        <div class="output">
+            <h2>Predicted Price: <span id="predictedPrice"></span></h2>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
